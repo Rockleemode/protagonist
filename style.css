@@ -12,8 +12,11 @@
 }
 
 .left{
+    top: 0;
+    left: 0;
     height: 100%;
     width: 35%;
+    position: absolute;
 }
 
 .left > div{
@@ -21,10 +24,58 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:100vh;
+    height:100%;
     color: white;
 } 
 
 .left h1{
+margin-bottom: 25px;    
+}
+
+.right{
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    height: 100%;
+}
+
+.right > div{
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+button{
+    cursor: pointer;
+    padding: 10px;
+    color: gray;
+    outline: none;
+}
+
+button:hover{
+color :black;
+}
+
+button:focus{
+    outline: none;
+}
+
+.container .button button{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+}
+
+.container .down-btn{
+    transform: translateX(-100%);
+ 
+}
+
+.container .up-btn{
+    transform: translateY(-100%);
     
 }
+
+
